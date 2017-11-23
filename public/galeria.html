@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="/galeria.css">
+    <title>Home</title>
+</head>
+
+<body class="galeria-back">
+<div id="app">
+
+    <div>
+        <img class="galeria-large" v-bind:src="mainPhoto">
+    </div>
+
+    <div class="img-list-container">
+        <div v-for="image in fotos" class="img-list-item">
+            <img v-bind:src="image" v-on:click="mainPhoto = image" style="width: 140px; height: 100px;"> </img>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el: "#app"
+        ,data: {
+            mainPhoto: '/galeria/1.jpg',
+            fotos : ['/galeria/1.jpg',
+                     '/galeria/2.jpg',
+                     '/galeria/3.jpg',
+                     '/galeria/4.jpg',
+                     '/galeria/5.jpg',
+                     '/galeria/6.jpg',
+                     '/galeria/8.jpg',
+                     '/galeria/9.jpg',
+                     '/galeria/10.jpg',
+                     '/galeria/11.jpg',
+                     '/galeria/12.jpg',
+                     '/galeria/13.jpg',
+                     '/galeria/14.jpg',
+                     '/galeria/15.jpg',
+                     '/galeria/16.jpg',
+                     '/galeria/17.jpg',
+                     '/galeria/18.jpg',
+                     '/galeria/19.jpg',
+                     '/galeria/20.jpg',
+                     '/galeria/21.jpg',
+                     '/galeria/22.jpg',
+                     '/galeria/23.jpg']
+        }
+    });
+</script>
+
+</html>

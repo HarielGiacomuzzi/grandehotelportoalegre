@@ -1,0 +1,30 @@
+.img-list-container {
+    display: flex;
+    width: 80vw;
+    overflow-x: auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-list-item {
+    margin-right: 10px;
+}
+
+.galeria-back {
+    background-image: url("/images/back-galeria.jpg");
+    width: 100vw;
+    height: 100vw;
+    background-size: contain;
+}
+
+.galeria-large {
+    height: 460px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%)
+}
