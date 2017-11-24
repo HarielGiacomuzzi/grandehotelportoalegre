@@ -20,12 +20,12 @@
 .logo {
     position: absolute;
     background-size: 100%;
-    width: 99%;
-    height: 98%;
+    width: 50%;
+    height: 37%;
     top: 0%;
     left: 0%;
     margin-right: -50%;
-    transform: translate(0%, 0%);
+    transform: translate(0%, 23%);
     z-index: 1;
 }
 
