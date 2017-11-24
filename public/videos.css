@@ -1,0 +1,36 @@
+.videos-back {
+    background-image: url("/images/back-videos.png");
+    position: absolute;
+    background-size: 100%;
+    width: 99%;
+    height: 98%;
+    top: 0%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(0%, 0%);
+}
+
+.players {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 8%;
+    width: 900px;
+    height: 500px;
+    display: block;
+}
+
+.video-item {
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    display: -webkit-inline-box;
+}
+
+.button-group {
+    display: block;
+    width: 300px;
+    margin-left: 60%;
+    margin-top: 10%;
+    position: absolute;
+}

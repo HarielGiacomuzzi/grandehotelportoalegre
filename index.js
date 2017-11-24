@@ -17,7 +17,13 @@ app.use(bodyParser.json({ type: 'application/json' }));
 app.use(express.static('./public/'));
 app.use('/img', express.static('./public/images/'));
 app.use('/img', express.static('./public/galeria/'));
+app.use(express.static('./public/videos/'));
 // application -------------------------------------------------------------
+
+app.get('/videos', function(req, res) {
+    res.sendfile(`${__dirname}/public/videos.html`);
+});
+
 app.get('/galeria', function(req, res) {
     res.sendfile(`${__dirname}/public/galeria.html`);
 });

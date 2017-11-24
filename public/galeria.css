@@ -15,9 +15,14 @@
 
 .galeria-back {
     background-image: url("/images/back-galeria.jpg");
-    width: 100vw;
-    height: 100vw;
-    background-size: contain;
+    position: absolute;
+    background-size: 100%;
+    width: 99%;
+    height: 98%;
+    top: 0%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(0%, 0%);
 }
 
 .galeria-large {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="/videos.css">
+    <title>Home</title>
+</head>
+
+<body class="videos-back">
+<div id="app">
+    <p>{{teste}}</p>
+
+    <div class="players">
+        <div v-for="video in videos" class="video-item">
+            <video v-bind:src="video" controls height="300" width="400">
+                Sorry, your browser doesn't support embedded videos,
+                but don't worry, you can <a v-bind:href="video">download it</a>
+                and watch it with your favorite video player!
+            </video>
+        </div>
+    </div>
+
+    <div class="button-group">
+        <img v-on:click="gotoGaleria" src="/images/galeria.png" style="margin-bottom: -200px;">
+        <img v-on:click="gotoSobre" src="/images/saiba-mais.png">
+    </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el: "#app"
+        ,data: {
+            videos: ["/videos/ESCADA_1.mp4" ,"/videos/ESCADA_1.mp4", "/videos/ESCADA_1.mp4", "/videos/ESCADA_1.mp4"]
+        }
+        ,methods: {
+            gotoGaleria: function() {
+                window.location.href = '/galeria';
+            }
+            ,gotoSobre: function() {
+                window.location.href = '/sobre';
+            }
+        }
+    });
+</script>
+
+</html>
