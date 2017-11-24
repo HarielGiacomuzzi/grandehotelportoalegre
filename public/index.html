@@ -3,12 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="/index.css">
 	<title>Home</title>
 </head>
 
-<body>
+<body class="back-home">
+
 <div id="app">
-	<p>{{test}}</p>
+
+	<div style="width: 825px;">
+		<img v-on:click="gotoVideos" class="logo" src="/images/logo.png">
+		<p class="font-texto">Projeto Experimental II Audiovisual<br>Famecos | Jornalismo 2017/2</p>
+	</div>
+
+	<div class="button-entrar">
+		<img v-on:click="gotoVideos" src="/images/saiba-mais.png">
+	</div>
+
 </div>
 
 </body>
@@ -16,8 +27,10 @@
 <script type="text/javascript">
 	new Vue({
 		 el: "#app"
-		,data: {
-		     test : "AAAAA"
+		,methods: {
+            gotoVideos: function() {
+                window.location.href = '/videos';
+            }
 		}
 	});
 </script>

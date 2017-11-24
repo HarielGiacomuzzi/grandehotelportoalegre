@@ -1,0 +1,42 @@
+@font-face {
+    font-family: dream_orphans;
+    src: url("/dream_orphans.ttf");
+}
+
+.button-entrar {
+    margin-left: 50px;
+    z-index: 100;
+}
+
+.font-texto {
+    font-family: dream_orphans;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 450px;
+}
+
+.logo {
+    position: absolute;
+    background-size: 100%;
+    width: 99%;
+    height: 98%;
+    top: 0%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(0%, 0%);
+    z-index: 1;
+}
+
+.back-home {
+    background-image: url("/images/back-videos.png");
+    position: absolute;
+    background-size: 100%;
+    width: 99%;
+    height: 98%;
+    top: 0%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(0%, 0%);
+}
