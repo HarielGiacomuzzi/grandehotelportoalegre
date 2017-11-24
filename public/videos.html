@@ -9,15 +9,18 @@
 
 <body class="videos-back">
 <div id="app">
-    <p>{{teste}}</p>
-
     <div class="players">
-        <div v-for="video in videos" class="video-item">
-            <video v-bind:src="video" controls height="300" width="400">
-                Sorry, your browser doesn't support embedded videos,
-                but don't worry, you can <a v-bind:href="video">download it</a>
-                and watch it with your favorite video player!
-            </video>
+        <div class="video-item">
+            <div id="Y_PNZvGawr0"></div>
+        </div>
+        <div class="video-item">
+            <div id="Ov5ylG1o7K4"></div>
+        </div>
+        <div class="video-item">
+            <div id="p_jBxBtPrMQ"></div>
+        </div>
+        <div class="video-item">
+            <div id="koKEkJDp3rQ"></div>
         </div>
     </div>
 
@@ -29,6 +32,47 @@
 </div>
 
 </body>
+
+<script type="text/javascript">
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    function onYouTubeIframeAPIReady() {
+        new YT.Player('Y_PNZvGawr0', {
+            height: '300',
+            width: '400',
+            videoId: 'Y_PNZvGawr0',
+            events: {}
+        });
+
+        new YT.Player('Ov5ylG1o7K4', {
+            height: '300',
+            width: '400',
+            videoId: 'Ov5ylG1o7K4',
+            events: {}
+        });
+
+        new YT.Player('p_jBxBtPrMQ', {
+            height: '300',
+            width: '400',
+            videoId: 'p_jBxBtPrMQ',
+            events: {}
+        });
+
+        new YT.Player('koKEkJDp3rQ', {
+            height: '300',
+            width: '400',
+            videoId: 'koKEkJDp3rQ',
+            events: {}
+        });
+    }
+</script>
 
 <script type="text/javascript">
     new Vue({
