@@ -7,7 +7,12 @@
     <title>Videos</title>
 </head>
 
-<body class="videos-back">
+<body>
+
+<div id="bg">
+    <img src="/images/videos.png">
+</div>
+
 <div id="app">
     <div class="players">
         <div class="video-item">
@@ -25,8 +30,8 @@
     </div>
 
     <div class="button-group">
-        <img v-on:click="gotoGaleria" src="/images/galeria.png" style="margin-bottom: -200px;">
-        <img v-on:click="gotoSobre" src="/images/saiba-mais.png">
+        <img v-on:click="gotoGaleria" src="/images/galeria.png" class="button-videos" style="margin-top: 50%;">
+        <img v-on:click="gotoSobre" src="/images/saiba-mais.png" class="button-videos" style="margin-top: 20px;">
     </div>
 
 </div>
